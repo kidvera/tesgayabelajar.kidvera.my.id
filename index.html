@@ -1,9 +1,11 @@
+
+Tes kepribadian gayabelajar · HTML
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Temani Tumbuh — Tes Kepribadian &amp; Gaya Belajar</title>
+<title>Temani Tumbuh — Kecenderungan Karakter &amp; Gaya Belajar</title>
 <style>
   :root{
     font-size:62.5%;
@@ -27,7 +29,7 @@
     line-height:1.55;
     letter-spacing:-0.01em;
   }
-
+ 
   /* ---------- HERO ---------- */
   header{
     padding:8rem 2rem 6rem;
@@ -57,13 +59,13 @@
     color:var(--ink-soft);
     font-weight:400;
   }
-
+ 
   .container{padding:5rem 2rem 8rem;max-width:760px;margin:auto;}
-
+ 
   .step{display:none;}
   .step.active{display:block;animation:fadeIn 0.35s ease;}
   @keyframes fadeIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
-
+ 
   /* ---------- PROGRESS ---------- */
   .progress-bar{
     display:flex;
@@ -92,7 +94,7 @@
   .progress-bar span.aktif::before{background:var(--biru);}
   .progress-bar span.done{color:var(--ink);}
   .progress-bar span.done::before{background:var(--hijau);}
-
+ 
   /* ---------- CARDS ---------- */
   .card-box{
     background:var(--bg);
@@ -101,7 +103,7 @@
     border:1px solid var(--line);
     margin-bottom:2.4rem;
   }
-
+ 
   h2.judul-section{
     font-size:2.6rem;
     font-weight:700;
@@ -111,7 +113,7 @@
     margin-bottom:0.8rem;
   }
   .card-box > p{color:var(--ink-soft);margin-top:0;}
-
+ 
   .pilihan-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
@@ -133,7 +135,7 @@
   }
   .pilihan-grid label:has(input:checked){border-color:var(--biru);}
   .pilihan-grid input{transform:scale(1.3);accent-color:var(--biru);}
-
+ 
   label.item{
     display:flex;
     align-items:center;
@@ -145,7 +147,7 @@
   }
   label.item:last-child{border-bottom:none;}
   input[type="checkbox"]{transform:scale(1.25);accent-color:var(--biru);flex-shrink:0;}
-
+ 
   /* ---------- BUTTONS ---------- */
   button, .btn{
     display:inline-flex;
@@ -186,10 +188,10 @@
     border-radius:0;
   }
   .btn-link:hover{opacity:0.7;text-decoration:underline;}
-
+ 
   .nav-row{display:flex;gap:1.2rem;margin-top:2rem;flex-wrap:wrap;}
   .nav-row button, .nav-row .btn{flex:1;min-width:160px;}
-
+ 
   /* ---------- PREMIUM BADGE (satu-satunya aksen warna tambahan) ---------- */
   .premium-badge{
     display:inline-block;
@@ -203,7 +205,7 @@
     padding:0.35rem 1.1rem;
     margin-bottom:1.2rem;
   }
-
+ 
   /* ---------- TEST CARDS (sensorik / minat bakat) ---------- */
   .test-card-list{margin-top:2rem;display:flex;flex-direction:column;gap:1.4rem;}
   .test-card{
@@ -222,7 +224,7 @@
     text-decoration:none;
   }
   .test-card-actions .premium-link:hover{text-decoration:underline;}
-
+ 
   /* ---------- RESULT TYPES ---------- */
   .tipe{
     margin-bottom:2.6rem;
@@ -235,7 +237,10 @@
   .tipe p strong{color:var(--ink);}
   .skor-bar-wrap{background:var(--bg-soft);border-radius:999px;height:0.8rem;overflow:hidden;margin:0.8rem 0 1.4rem;}
   .skor-bar{background:var(--biru);height:100%;border-radius:999px;}
-
+  .level-tinggi{color:var(--hijau);font-weight:700;}
+  .level-sedang{color:#b8860b;font-weight:700;}
+  .level-rendah{color:var(--ink-soft);font-weight:700;}
+ 
   .teaser-box{
     border:1px solid var(--line);
     border-radius:20px;
@@ -245,7 +250,7 @@
   .teaser-dominan{font-size:2rem;font-weight:700;letter-spacing:-0.01em;color:var(--ink);margin-bottom:1.4rem;}
   .teaser-box p{margin:0.8rem 0;font-size:1.6rem;color:var(--ink-soft);}
   .teaser-box p strong{color:var(--ink);}
-
+ 
   /* ---------- LOCKED (frosted glass) ---------- */
   .locked-wrap{
     position:relative;
@@ -274,7 +279,7 @@
   }
   .locked-overlay .lock-icon{font-size:3.6rem;margin-bottom:1rem;}
   .locked-overlay p{font-size:1.8rem;max-width:420px;margin:0 0 2rem;font-weight:600;color:var(--ink);}
-
+ 
   /* ---------- FORM ---------- */
   .form-field{margin-bottom:2rem;}
   .form-field label{display:block;font-weight:600;margin-bottom:0.8rem;font-size:1.5rem;color:var(--ink);}
@@ -289,7 +294,7 @@
   }
   .form-field input:focus{outline:2px solid var(--biru);outline-offset:1px;background:white;}
   .form-hint{font-size:1.3rem;color:var(--ink-soft);margin-top:0.6rem;}
-
+ 
   /* ---------- CTA FINAL / UPGRADE PANEL ---------- */
   .cta-final{
     text-align:center;
@@ -315,16 +320,16 @@
     margin-top:2.4rem;
   }
   .pilihan-aksi button{min-width:200px;}
-
+ 
   .footer-note{
     margin-top:5rem;
     text-align:center;
     font-size:1.4rem;
     color:var(--ink-soft);
   }
-
+ 
   .error-msg{color:#c2366a;font-size:1.4rem;margin-top:1rem;display:none;}
-
+ 
   @media (max-width:480px){
     header{padding:6rem 2rem 4.5rem;}
     header h1{font-size:3.2rem;}
@@ -336,110 +341,116 @@
 </style>
 </head>
 <body>
-
+ 
 <header>
   <span class="eyebrow">Temani Tumbuh</span>
   <h1>Karakter &amp;<br>cara belajar anak.</h1>
   <p>Dua tes singkat untuk memahami kepribadian dan gaya belajar anak — cuplikan hasilnya gratis, tinggal isi dan lihat.</p>
 </header>
-
+ 
 <div class="container">
-
+ 
   <div class="progress-bar" id="progressBar">
     <span id="pb-pilih" class="aktif">Pilih Tes</span>
     <span id="pb-isi">Isi Tes</span>
     <span id="pb-teaser">Cuplikan</span>
     <span id="pb-lengkap">Hasil</span>
   </div>
-
+ 
   <!-- STEP 1: PILIH TES -->
   <div class="step active" id="step-pilih">
     <div class="card-box">
       <h2 class="judul-section">Pilih tes yang ingin diisi</h2>
       <p>Isi salah satu atau keduanya sekaligus — makin lengkap, makin akurat gambaran tentang anakmu.</p>
       <div class="pilihan-grid">
-        <label><input type="checkbox" id="pilih-kepribadian" checked> Tes Kepribadian</label>
+        <label><input type="checkbox" id="pilih-kepribadian" checked> Tes Kecenderungan Karakter</label>
         <label><input type="checkbox" id="pilih-gayabelajar" checked> Tes Gaya Belajar</label>
       </div>
       <button class="btn-block" onclick="mulaiTes()">Mulai Isi Tes →</button>
     </div>
-
+ 
     <p style="text-align:center;">
       <a class="btn-link" href="https://tessensorikanak.kidvera.my.id/" target="_blank">Anak susah fokus, tantrum, atau pilih-pilih makanan? Cek Tes Sensorik →</a>
     </p>
   </div>
-
+ 
   <!-- STEP 2: ISI TES -->
   <div class="step" id="step-isi">
     <div class="card-box" id="box-kepribadian">
-      <h2 class="judul-section">Tes Kepribadian</h2>
+      <h2 class="judul-section">Tes Kecenderungan Karakter Anak</h2>
       <p>Centang pernyataan yang paling menggambarkan perilaku anakmu.</p>
-
-      <label class="item"><input type="checkbox" name="sanguinis"> Anak terlihat selalu bersemangat dan ceria.</label>
+ 
+      <label class="item"><input type="checkbox" name="sanguinis"> Anak sering terlihat bersemangat dan ceria.</label>
       <label class="item"><input type="checkbox" name="sanguinis"> Anak mudah akrab dengan orang baru.</label>
       <label class="item"><input type="checkbox" name="sanguinis"> Anak cenderung banyak bicara dan suka bercerita.</label>
-      <label class="item"><input type="checkbox" name="sanguinis"> Anak sangat ekspresif dan emosional.</label>
+      <label class="item"><input type="checkbox" name="sanguinis"> Anak cenderung ekspresif dan mudah menunjukkan emosinya.</label>
       <label class="item"><input type="checkbox" name="sanguinis"> Anak menyukai perhatian dan pengakuan dari orang lain.</label>
-
-      <label class="item"><input type="checkbox" name="koleris"> Anak selalu ingin menang atau memimpin.</label>
-      <label class="item"><input type="checkbox" name="koleris"> Anak cepat bertindak dan tidak suka menunggu.</label>
+ 
+      <label class="item"><input type="checkbox" name="koleris"> Anak sering ingin menjadi yang terdepan atau memimpin.</label>
+      <label class="item"><input type="checkbox" name="koleris"> Anak cenderung cepat bertindak dan kurang sabar menunggu.</label>
       <label class="item"><input type="checkbox" name="koleris"> Anak cenderung percaya diri dan tegas.</label>
       <label class="item"><input type="checkbox" name="koleris"> Anak suka menetapkan target atau tujuan.</label>
-      <label class="item"><input type="checkbox" name="koleris"> Anak berani mengambil risiko dan menghadapi tantangan.</label>
-
-      <label class="item"><input type="checkbox" name="flegmatis"> Anak sangat sabar dan tenang.</label>
+      <label class="item"><input type="checkbox" name="koleris"> Anak cenderung berani mengambil risiko dan menghadapi tantangan.</label>
+ 
+      <label class="item"><input type="checkbox" name="flegmatis"> Anak cenderung sabar dan tenang.</label>
       <label class="item"><input type="checkbox" name="flegmatis"> Anak tidak suka konflik dan lebih memilih damai.</label>
       <label class="item"><input type="checkbox" name="flegmatis"> Anak cenderung pasif dan tidak ingin menonjol.</label>
       <label class="item"><input type="checkbox" name="flegmatis"> Anak mudah diajak bekerja sama.</label>
       <label class="item"><input type="checkbox" name="flegmatis"> Anak sering menunda-nunda tugas atau keputusan.</label>
-
-      <label class="item"><input type="checkbox" name="melankolis"> Anak sangat rapi dan teratur.</label>
+ 
+      <label class="item"><input type="checkbox" name="melankolis"> Anak cenderung menjaga kerapian barang miliknya.</label>
       <label class="item"><input type="checkbox" name="melankolis"> Anak suka hal-hal yang detail dan teliti.</label>
       <label class="item"><input type="checkbox" name="melankolis"> Anak cenderung perfeksionis dan takut salah.</label>
       <label class="item"><input type="checkbox" name="melankolis"> Anak suka menyendiri atau diam.</label>
-      <label class="item"><input type="checkbox" name="melankolis"> Anak sensitif dan mudah merasa sedih.</label>
+      <label class="item"><input type="checkbox" name="melankolis"> Anak cenderung sensitif dan mudah merasa sedih.</label>
     </div>
-
+ 
     <div class="card-box" id="box-gayabelajar">
       <h2 class="judul-section">Tes Gaya Belajar</h2>
       <p>Centang pernyataan yang paling menggambarkan perilaku anakmu sehari-hari.</p>
-
+ 
       <label class="item"><input type="checkbox" name="visual"> Anak cenderung lebih senang melihat dan mengamati objek.</label>
       <label class="item"><input type="checkbox" name="visual"> Anak cenderung tertarik pada objek yang mencolok dan berwarna-warni.</label>
       <label class="item"><input type="checkbox" name="visual"> Anak cenderung sering terlihat melamun saat mengingat sesuatu.</label>
       <label class="item"><input type="checkbox" name="visual"> Anak cenderung memperhatikan gerak-gerik orang yang berbicara.</label>
       <label class="item"><input type="checkbox" name="visual"> Anak cenderung lebih memahami instruksi tertulis daripada lisan.</label>
-
+ 
       <label class="item"><input type="checkbox" name="auditori"> Anak cenderung lebih suka menerima informasi secara suara.</label>
       <label class="item"><input type="checkbox" name="auditori"> Anak cenderung sering mengulang kata yang disampaikan orang lain.</label>
       <label class="item"><input type="checkbox" name="auditori"> Anak cenderung bisa mengingat informasi dengan lagu atau irama.</label>
       <label class="item"><input type="checkbox" name="auditori"> Anak cenderung bisa mengulang perkataan orang meskipun tidak memperhatikan.</label>
       <label class="item"><input type="checkbox" name="auditori"> Anak cenderung senang berdiskusi dan berdebat.</label>
-
+ 
+      <label class="item"><input type="checkbox" name="readwrite"> Anak lebih mudah memahami informasi ketika membaca sendiri.</label>
+      <label class="item"><input type="checkbox" name="readwrite"> Anak senang menulis catatan atau membuat daftar.</label>
+      <label class="item"><input type="checkbox" name="readwrite"> Anak sering meminta buku atau bacaan dibandingkan video.</label>
+      <label class="item"><input type="checkbox" name="readwrite"> Anak lebih mudah mengingat setelah menulis kembali materi.</label>
+      <label class="item"><input type="checkbox" name="readwrite"> Anak senang mengerjakan soal, jurnal, atau aktivitas menulis.</label>
+ 
       <label class="item"><input type="checkbox" name="kinestetik"> Anak cenderung suka belajar sambil bergerak atau beraktivitas.</label>
       <label class="item"><input type="checkbox" name="kinestetik"> Anak cenderung sulit duduk diam dalam waktu lama.</label>
       <label class="item"><input type="checkbox" name="kinestetik"> Anak cenderung lebih memahami dengan praktik langsung.</label>
       <label class="item"><input type="checkbox" name="kinestetik"> Anak cenderung mudah mengingat dengan melakukan gerakan.</label>
       <label class="item"><input type="checkbox" name="kinestetik"> Anak cenderung terburu-buru atau tidak sabaran.</label>
     </div>
-
+ 
     <div class="nav-row">
       <button class="btn-outline" onclick="kembaliKePilih()">← Kembali</button>
       <button onclick="lihatTeaser()">Lihat Cuplikan Hasil →</button>
     </div>
   </div>
-
+ 
   <!-- STEP 3: TEASER -->
   <div class="step" id="step-teaser">
     <div id="teaser-kepribadian"></div>
     <div id="teaser-gayabelajar"></div>
-
+ 
     <div class="card-box" id="ajakan-kirim">
       <h2 class="judul-section">Mau tau cara menanganinya yang lebih tepat?</h2>
       <p>Kirim hasil ini ke WhatsApp kami — nanti kami balas dengan penjelasan lengkap kekuatan, tantangan, saran pola asuh, dan cara mendampingi kombinasi kepribadian & gaya belajar anakmu.</p>
       <button onclick="bukaForm()">Konsultasi + PDF</button>
     </div>
-
+ 
     <div id="form-kontak" style="display:none;" class="card-box">
       <h2 class="judul-section">Sedikit lagi</h2>
       <p>Data ini untuk mengirim hasil ke WhatsApp kami, supaya kami bisa balas dengan penjelasan lengkapnya.</p>
@@ -459,36 +470,36 @@
       <div class="error-msg" id="form-error">Nama dan No. WhatsApp wajib diisi ya, Bun/Yah 🙏</div>
       <button class="btn-block" onclick="submitForm()">Konsultasi + PDF</button>
     </div>
-
+ 
     <div class="nav-row">
       <button class="btn-outline" onclick="kembaliKeIsi()">← Ubah Jawaban</button>
     </div>
   </div>
-
+ 
   <!-- STEP 4: SELESAI -->
   <div class="step" id="step-lengkap">
     <div class="card-box" style="text-align:center;">
       <h2 class="judul-section">Terima kasih! 🌱</h2>
       <p>Hasil cuplikan tesnya sudah kami terima. Kami akan segera hubungi kamu di WhatsApp — kamu bisa pilih mau lanjut laporan PDF lengkap + konsultasi, atau cukup cuplikan tadi saja.</p>
     </div>
-
+ 
     <div class="cta-final">
       <h3>Pantau perkembangannya tiap hari</h3>
       <p>Ingin pantau perkembangan anak setiap hari, bukan cuma sekali tes?</p>
       <a class="btn btn-outline" href="https://kidvera.lovable.app" target="_blank">Buka Kidvera</a>
     </div>
-
+ 
     <p style="text-align:center;">
       <a class="btn-link" href="https://tessensorikanak.kidvera.my.id/" target="_blank">Anak susah fokus, tantrum, atau pilih-pilih makanan? Cek Tes Sensorik →</a>
     </p>
-
+ 
     <div class="footer-note">
       Semua tes gratis dan bisa langsung diisi. Untuk panduan harian berdasarkan hasil anakmu, laporan lengkap, konsultasi, atau Kidvera bisa jadi langkah pertama.
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <script>
   const tipeKepribadian = [
     { kode:'sanguinis', label:'Promotor (Sanguinis)',
@@ -508,31 +519,33 @@
       negatif:'Perfeksionis, sensitif, dan mudah khawatir.',
       saran:'Bantu anak memahami bahwa tidak apa-apa membuat kesalahan. Bangun rasa percaya diri melalui apresiasi.' }
   ];
-
+ 
   const deskripsiGaya = {
     V: 'Anak Anda cenderung belajar paling baik melalui penglihatan, seperti gambar, warna, atau observasi. Gunakan alat bantu visual saat mendampingi belajar.',
     A: 'Anak Anda cenderung belajar paling efektif dengan mendengarkan, seperti melalui lagu, diskusi, atau suara. Gunakan instruksi verbal atau audio untuk membantunya.',
+    R: 'Anak Anda cenderung belajar paling baik melalui membaca, menulis, membuat catatan, daftar, atau mengerjakan latihan tertulis.',
     K: 'Anak Anda cenderung lebih memahami melalui gerakan dan pengalaman langsung. Gunakan aktivitas fisik atau praktik saat belajar.'
   };
-
+ 
   const singkatGaya = {
     V: 'Senang melihat, mengamati, dan mengingat lewat gambar atau warna.',
     A: 'Senang mendengarkan, berdiskusi, dan mengingat lewat suara atau irama.',
+    R: 'Senang membaca, membuat catatan, menulis, dan mengingat melalui teks.',
     K: 'Senang bergerak, praktik langsung, dan belajar lewat pengalaman.'
   };
-
+ 
   let ikutKepribadian = true;
   let ikutGayaBelajar = true;
   let hasilKepribadian = null;
   let hasilGayaBelajar = null;
   let dataAnak = { nama:'', usia:'', wa:'' };
-
+ 
   function setStep(id){
     document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     window.scrollTo({top:0, behavior:'smooth'});
   }
-
+ 
   function updateProgress(stepNum){
     const ids=['pb-pilih','pb-isi','pb-teaser','pb-lengkap'];
     ids.forEach((id,i)=>{
@@ -542,7 +555,7 @@
       else if(i===stepNum) el.classList.add('aktif');
     });
   }
-
+ 
   function mulaiTes(){
     ikutKepribadian = document.getElementById('pilih-kepribadian').checked;
     ikutGayaBelajar = document.getElementById('pilih-gayabelajar').checked;
@@ -555,17 +568,17 @@
     setStep('step-isi');
     updateProgress(1);
   }
-
+ 
   function kembaliKePilih(){
     setStep('step-pilih');
     updateProgress(0);
   }
-
+ 
   function kembaliKeIsi(){
     setStep('step-isi');
     updateProgress(1);
   }
-
+ 
   function hitungKepribadian(){
     const data = tipeKepribadian.map(t=>({...t}));
     data.forEach(t=>{
@@ -574,86 +587,108 @@
     data.sort((a,b)=>b.nilai-a.nilai);
     return data;
   }
-
+ 
   function hitungGayaBelajar(){
     const visual = document.querySelectorAll('input[name="visual"]:checked').length;
     const auditori = document.querySelectorAll('input[name="auditori"]:checked').length;
+    const readwrite = document.querySelectorAll('input[name="readwrite"]:checked').length;
     const kinestetik = document.querySelectorAll('input[name="kinestetik"]:checked').length;
     const skor = [
-      { jenis:'A', nama:'Auditory', nilai:auditori },
       { jenis:'V', nama:'Visual', nilai:visual },
+      { jenis:'A', nama:'Auditory', nilai:auditori },
+      { jenis:'R', nama:'Read & Write', nilai:readwrite },
       { jenis:'K', nama:'Kinesthetic', nilai:kinestetik }
     ];
-    skor.sort((a,b)=> b.nilai-a.nilai || ['A','V','K'].indexOf(a.jenis)-['A','V','K'].indexOf(b.jenis));
+    skor.sort((a,b)=> b.nilai-a.nilai || ['V','A','R','K'].indexOf(a.jenis)-['V','A','R','K'].indexOf(b.jenis));
     return skor;
   }
-
+ 
+  function levelPreferensi(nilai, maxNilai){
+    const persen = maxNilai>0 ? nilai/maxNilai : 0;
+    if(persen >= 0.7) return { label:'Tinggi', kelas:'level-tinggi' };
+    if(persen >= 0.35) return { label:'Sedang', kelas:'level-sedang' };
+    return { label:'Rendah', kelas:'level-rendah' };
+  }
+ 
   function buatBarSkor(nilai, maxNilai){
     const persen = maxNilai>0 ? Math.round((nilai/maxNilai)*100) : 0;
     return `<div class="skor-bar-wrap"><div class="skor-bar" style="width:${persen}%"></div></div>`;
   }
-
+ 
   function lihatTeaser(){
     if(ikutKepribadian){
       hasilKepribadian = hitungKepribadian();
       const dua = hasilKepribadian.slice(0,2);
       let box = `<div class="teaser-box">
-        <div class="teaser-dominan">Anak Anda memiliki kepribadian dominan ${dua[0].label} dan ${dua[1].label}.</div>`;
+        <div class="teaser-dominan">Anak Anda memiliki kecenderungan karakter dominan ${dua[0].label} dan ${dua[1].label}.</div>`;
       dua.forEach(t=>{
         box += `<p><strong>${t.label}:</strong> ${t.positif}</p>`;
       });
-      box += `</div>`;
+      box += `<p style="margin-top:1.6rem;font-size:1.4rem;color:var(--ink-soft);">Ini gambaran kecenderungan, bukan diagnosis atau label baku — setiap anak biasanya punya campuran dari beberapa karakter.</p>`;
+      box += `<div style="margin-top:1.6rem;">`;
+      hasilKepribadian.forEach(t=>{
+        const persen = Math.round((t.nilai/5)*100);
+        box += `<p style="margin-bottom:0.3rem;font-weight:600;font-size:1.4rem;">${t.label} — ${persen}%</p>${buatBarSkor(t.nilai,5)}`;
+      });
+      box += `</div></div>`;
       document.getElementById('teaser-kepribadian').innerHTML = box;
     } else {
       document.getElementById('teaser-kepribadian').innerHTML = '';
     }
-
+ 
     if(ikutGayaBelajar){
       hasilGayaBelajar = hitungGayaBelajar();
-      const dua = hasilGayaBelajar.slice(0,2);
+      const teratas = hasilGayaBelajar.filter(s=>s.nilai===hasilGayaBelajar[0].nilai && s.nilai>0);
+      const namaTerbaik = teratas.length ? teratas.map(s=>s.nama).join(' dan ') : null;
+ 
       let box = `<div class="teaser-box">
-        <div class="teaser-dominan">Anak Anda cenderung belajar dengan gaya ${dua[0].nama} dan ${dua[1].nama}.</div>`;
-      dua.forEach(s=>{
-        box += `<p><strong>${s.nama}:</strong> ${singkatGaya[s.jenis]}</p>`;
+        <div class="teaser-dominan">Preferensi belajar anak Anda saat ini</div>
+        <p style="font-size:1.4rem;color:var(--ink-soft);margin-top:0.4rem;">Ini preferensi, bukan "label" tetap — anak tetap perlu dikenalkan berbagai cara belajar supaya lebih fleksibel.</p>`;
+      hasilGayaBelajar.forEach(s=>{
+        const level = levelPreferensi(s.nilai, 5);
+        box += `<p style="margin-bottom:0.3rem;margin-top:1.4rem;font-weight:600;">${s.nama}: <span class="${level.kelas}">${level.label}</span></p>${buatBarSkor(s.nilai,5)}`;
       });
+      if(namaTerbaik){
+        box += `<p style="margin-top:1.6rem;">Anak tampak lebih nyaman belajar melalui <strong>${namaTerbaik}</strong>, tetapi tetap perlu dikenalkan cara belajar lain agar lebih fleksibel dalam berbagai situasi.</p>`;
+      }
       box += `</div>`;
       document.getElementById('teaser-gayabelajar').innerHTML = box;
     } else {
       document.getElementById('teaser-gayabelajar').innerHTML = '';
     }
-
+ 
     document.getElementById('form-kontak').style.display = 'none';
     setStep('step-teaser');
     updateProgress(2);
   }
-
+ 
   function bukaForm(){
     document.getElementById('form-kontak').style.display = 'block';
     document.getElementById('form-kontak').scrollIntoView({behavior:'smooth'});
   }
-
+ 
   function submitForm(){
     const nama = document.getElementById('input-nama').value.trim();
     const usia = document.getElementById('input-usia').value.trim();
     const wa = document.getElementById('input-wa').value.trim();
     const errorEl = document.getElementById('form-error');
-
+ 
     if(!nama || !wa){
       errorEl.style.display = 'block';
       return;
     }
     errorEl.style.display = 'none';
-
+ 
     dataAnak = { nama, usia, wa };
-
+ 
     // Kirim cuplikan hasil + data kontak langsung ke WA Temani Tumbuh
     let pesan = `Halo, saya baru isi Tes Anak di Temani Tumbuh.%0A%0ANama anak: ${nama}%0AUsia: ${usia||'-'}%0ANo. WA saya: ${wa}%0A`;
-    if(hasilKepribadian) pesan += `Kepribadian dominan: ${hasilKepribadian[0].label} & ${hasilKepribadian[1].label}%0A`;
-    if(hasilGayaBelajar) pesan += `Gaya belajar dominan: ${hasilGayaBelajar[0].nama} & ${hasilGayaBelajar[1].nama}%0A`;
+    if(hasilKepribadian) pesan += `Kecenderungan karakter dominan: ${hasilKepribadian[0].label} & ${hasilKepribadian[1].label}%0A`;
+    if(hasilGayaBelajar) pesan += `Preferensi belajar teratas: ${hasilGayaBelajar[0].nama} & ${hasilGayaBelajar[1].nama}%0A`;
     pesan += `%0AMohon info penanganan yang tepat & PDF hasil lengkapnya ya, terima kasih 🙏`;
-
+ 
     window.open(`https://wa.me/6289663877770?text=${pesan}`, '_blank');
-
+ 
     setStep('step-lengkap');
     updateProgress(3);
   }
